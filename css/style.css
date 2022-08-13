@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -600px -750px, 50px 350px;
+  background-color: hsl(185, 75%, 39%);
+}
+.header-card {
+  border-radius: 5px 5px 0 0;
+  width: 350px;
+  height: 150px;
+  background-image: url("/images/bg-pattern-card.svg");
+}
+.body-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+  width: 350px;
+  height: 200px;
+}
+.social-midias {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 55px;
+}
+.numbers {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.card-name-city {
+  margin-top: -35px;
+  padding: 3px;
+  text-align: center;
+}
+.picture {
+  position: relative;
+  bottom: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+span {
+  font-weight: 700;
+}
+.bold {
+  font-weight: 700;
+}
+@media screen and (min-width: 400px) {
+  .container {
+    background-position: -200px -500px, 750px 450px;
+  }
+}
